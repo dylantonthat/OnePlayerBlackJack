@@ -64,7 +64,7 @@ public class BlackjackUI
         double bet = getValidBet();
 
         bj.placeBetAndDealCards(bet);
-        System.out.println("bet: $" + bj.getPlayersBet() + "\n");
+        System.out.println("bet: $" + bj.getPlayersBet() + "0\n");
         System.out.println("dealer's card: " + bj.getDealersHand().getCards().get(0));
         System.out.println("player's hand: " + bj.getPlayersHand());
 
@@ -72,7 +72,10 @@ public class BlackjackUI
         boolean canHitAgain = bj.canHit();
         while (canHitAgain)
         {
-            System.out.println("Recommended move: " + bjtrainer.getCorrectPlay(bj.getPlayersHand(), bj.getDealersHand().getCards().get(0)) + "\n");
+            String recommend = bjtrainer.getCorrectPlay(bj.getPlayersHand(), bj.getDealersHand().getCards().get(0));
+            
+            if (!recommend.equals(" "))
+                System.out.println("Recommended move: " + recommend + "\n");
 
             System.out.println("Do you want to hit, double, or stand? \n");
 
