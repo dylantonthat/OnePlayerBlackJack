@@ -2,7 +2,7 @@
 Interactive game of one-player blackjack with hit, double, and stand options available if applicable  
 To play, open src and run BlackjackPlay.java  
 
-Implemented Card, Hand, Shoe classes to create a shuffled deck of cards, read card values, and deal hands 
+Implemented Card, Hand, Shoe classes to create a shuffled deck of cards, read card values, and deal hands \n
 
 Incorporated BlackjackFunctions class to apply the many rules of blackjack to the dealer and player, alongside retrieving bets and payouts 
 
